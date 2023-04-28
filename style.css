@@ -1,0 +1,83 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: space-between;
+    
+}
+.boxs{
+    height:400px;
+    width:300px;
+    background-color: rgb(146, 173, 100);
+   
+    margin: 20px;
+}
+.boxs:hover{
+    background-color: blue;
+    color: white;
+}
+img{
+   position: relative;
+   left:80px;
+}
+h2{
+    color: white;
+    padding-left:90px;
+}
+p{
+   font-weight: bold;
+    text-align: center;
+}
+
+.btn{
+    background-color: blue;
+    height:40px;
+    width:150px;
+    border-radius: 10px;
+    font-size: 20px;
+   text-align: center;
+   padding-top: 10px;
+position: relative;
+left:50px;
+}
+.btn:hover{
+  background-color: rgb(182, 182, 208);
+  color:white;
+}
+
+h1{
+    text-align: center;
+    animation: sample 2s infinite normal;
+}
+@keyframes sample{
+    0%{
+        transform: scale(1,1);
+    }
+    100%{
+        transform:scale(0.5,1) ;
+    }
+}
+@media screen and (min-width:336px) and (max-width:667px){
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.boxs{
+    height:400px;
+    width:300px;
+    background-color: rgb(146, 173, 100);
+    margin: 20px;  
+}
+.boxs:hover{
+background-color: rgb(14, 23, 65);
+color:green;
+
+}
+.btn:hover{
+    background-color: red;
+    color:blue;
+}
+}
+
+ 
